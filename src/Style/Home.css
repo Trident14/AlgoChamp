@@ -1,0 +1,50 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.home_main {
+  display: flex;
+  flex-direction: row;
+  gap:5rem;
+  width: 100%;
+  height: 50%; /* Default is column for larger screens */
+}
+
+/* Media query for screens with a maximum width of 450px (typical mobile width) */
+@media screen and (max-width: 866px) {
+  .home_main {
+    flex-direction: column; /* Change to row for mobile */
+  }
+}
+.first-contianer{
+  max-width: 400px; /* Set your desired maximum width */
+  margin: 0 auto; 
+}
+.first-container p {
+  margin: 0; /* Remove default margins */
+  
+}
+
+
+.option{
+  display: flex;
+  gap:1rem;
+  flex-direction: column;
+}
+ul,li{
+  list-style: none;
+}
+
+.main{
+  display: flex;
+  
+  
+}
+.second-contianer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
