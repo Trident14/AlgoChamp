@@ -17,7 +17,7 @@ const Home = (props )=> {
 
 
   const fetchData = () => {
-    const url = 'http://localhost:8080/questions/random'; 
+    const url = 'https://algochampservice.onrender.com/questions/random'; 
     axios.get(url)
       .then(response => {
         setData(response.data);
@@ -78,7 +78,7 @@ const Home = (props )=> {
   };
 
   const fetchDataEasy = () => {
-    const url = 'http://localhost:8080/questions/Easy';
+    const url = 'https://algochampservice.onrender.com/questions/Easy';
     axios.get(url)
       .then(response => {
         setData(response.data);
@@ -91,7 +91,7 @@ const Home = (props )=> {
 
   const fetchDataMedium = () => {
    
-    const url = 'http://localhost:8080/questions/Medium';
+    const url = 'https://algochampservice.onrender.com/questions/Medium';
     axios.get(url)
       .then(response => {
         setData(response.data);
@@ -104,7 +104,7 @@ const Home = (props )=> {
 
   const fetchDataHard = () => {
   
-    const url = 'http://localhost:8080/questions/Hard';
+    const url = 'https://algochampservice.onrender.com/questions/Hard';
     axios.get(url)
       .then(response => {
         setData(response.data);

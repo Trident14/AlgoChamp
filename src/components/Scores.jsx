@@ -8,7 +8,7 @@ const Score = () => {
 
   const fetchData = () => {
     axios
-      .get('http://localhost:8080/point')
+      .get('https://algochampservice.onrender.com/point')
       .then((response) => {
         // Handle success
         console.log('Data Received:', response.data);

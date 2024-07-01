@@ -14,7 +14,7 @@ const FormPage = ({ userScore }) => {
 
   const fetchData = () => {
     axios
-      .get('http://localhost:8080/point', { timeout: 1000 }) // Set a timeout of 1000ms (1 second)
+      .get('https://algochampservice.onrender.com/point', { timeout: 1000 }) // Set a timeout of 1000ms (1 second)
       .then((response) => {
         // Handle success
         console.log('Data Received:', response.data);
@@ -43,7 +43,7 @@ const FormPage = ({ userScore }) => {
     };
 
     axios
-      .post('http://localhost:8080/AddScore', dataToSend)
+      .post('https://algochampservice.onrender.com/AddScore', dataToSend)
       .then((response) => {
         // Handle success
         // console.log('Data sent to the backend:', response.data);
